@@ -9,6 +9,7 @@ public class followPath : Seek
     float damageRadius = 10;
     protected override Vector3 getTargetPosition()
     {
+        target = path[0];
         if((target.transform.position - character.transform.position).magnitude <=damageRadius)
         {
             counter++;
